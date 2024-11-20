@@ -6,7 +6,7 @@ const sum = (a: number, b: number) => {
 };
 console.log(sum(2, 3));
 
-let playerName = "Tamim";
+let playerName = "Tamim Hasan";
 let age = 32;
 
 console.log(playerName);
