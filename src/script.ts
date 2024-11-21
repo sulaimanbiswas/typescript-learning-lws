@@ -171,3 +171,15 @@ const userDetails = (id: stringOrNumber, user: userType) => {
 const sayHello = (user: userType) => {
   console.log(`hello ${user.age > 50 ? "Sir" : "Mr"} ${user.name}`);
 };
+
+// Function Signatures
+
+let signaturesFuncVoid: (a: string, b: string) => void;
+
+let add: (x: number, y: number) => number;
+
+add = (a: number, b: number) => {
+  return a + b;
+};
+
+console.log(add(5, 2));
