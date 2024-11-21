@@ -90,10 +90,32 @@ const numFunc = (a, b) => {
     return a + b;
 };
 numFunc(5, 3);
-// Aliase Type
 const userDetails = (id, user) => {
     console.log(`user id is ${id}, name is ${user.name} and age is ${user.age}`);
 };
 const sayHello = (user) => {
     console.log(`hello ${user.age > 50 ? "Sir" : "Mr"} ${user.name}`);
 };
+// Function Signatures
+let signaturesFuncVoid;
+let add;
+add = (a, b) => {
+    return a + b;
+};
+console.log(add(5, 2));
+class Player {
+    constructor(n, a, c) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+    play() {
+        console.log(`${this.name} form ${this.country}`);
+    }
+}
+const mahmudullah = new Player("Mahmudullah", 40, "Bangladesh");
+const musfiq = new Player("Musfiq", 50, "Banglasesh");
+const players = [];
+players.push(mahmudullah);
+players.push(musfiq);
+console.log(players);

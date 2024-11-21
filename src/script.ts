@@ -183,3 +183,31 @@ add = (a: number, b: number) => {
 };
 
 console.log(add(5, 2));
+
+// Class
+
+class Player {
+  name: string;
+  age: number;
+  country: string;
+
+  constructor(n: string, a: number, c: string) {
+    this.name = n;
+    this.age = a;
+    this.country = c;
+  }
+
+  play() {
+    console.log(`${this.name} form ${this.country}`);
+  }
+}
+
+const mahmudullah = new Player("Mahmudullah", 40, "Bangladesh");
+const musfiq = new Player("Musfiq", 50, "Banglasesh");
+
+const players: Player[] = [];
+
+players.push(mahmudullah);
+players.push(musfiq);
+
+console.log(players);
