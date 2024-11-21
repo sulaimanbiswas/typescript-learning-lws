@@ -70,10 +70,6 @@ let fruitsName: string[];
 
 fruitsName = ["apple", "mango"];
 
-let multipleTypes: (string | number)[];
-
-multipleTypes = ["apple", 34, "mango"];
-
 let personInfo: {
   name: string;
   age: number;
@@ -84,4 +80,46 @@ personInfo = {
   name: "Tamim",
   age: 32,
   isHungry: true,
+};
+
+// union types
+
+let unionTypes: string | number;
+
+unionTypes = "apple";
+
+unionTypes = 34;
+
+let multipleTypes: (string | number)[];
+
+multipleTypes = ["apple", 34, "mango"];
+
+// dynamic types (any)
+
+let dynamicTypes: any;
+
+dynamicTypes = "apple";
+
+dynamicTypes = 34;
+
+dynamicTypes = true;
+
+dynamicTypes = {};
+
+dynamicTypes = [];
+
+dynamicTypes = () => {};
+
+let dynamicTypeArray: any[];
+
+dynamicTypeArray = ["apple"];
+
+let dynamicTypeObject: {
+  age: any;
+  name: any;
+};
+
+dynamicTypeObject = {
+  age: 45,
+  name: "25",
 };
