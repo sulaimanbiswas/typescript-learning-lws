@@ -1,3 +1,5 @@
+import { User } from "./classes/User.js";
+
 const country = "Bangladesh";
 console.log(country);
 
@@ -217,6 +219,7 @@ players.push(musfiq);
 
 console.log(players);
 
-class User {
-  constructor(private name: string, public age: number, country: string) {}
-}
+// Module System
+const user1 = new User("sulaiman", 25, "Bangladesh");
+
+console.log("user1", user1);
