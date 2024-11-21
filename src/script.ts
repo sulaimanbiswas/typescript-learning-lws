@@ -6,7 +6,7 @@ const sum = (a: number, b: number) => {
 };
 console.log(sum(2, 3));
 
-let playerName = "Tamim Hasan";
+let playerName = "Tamim";
 let age = 32;
 
 console.log(playerName);
@@ -43,8 +43,45 @@ let person = {
     city: "Dhaka",
     country: "Bangladesh",
   },
+  about: "I am a cricketer",
 };
 
 person.hobbies.push("coding");
 
 console.log(person);
+
+person.about = "I am a cricketer";
+
+// Explicit types
+
+let countryName: string;
+
+countryName = "Bangladesh";
+
+let playerAge: number;
+
+playerAge = 32;
+
+let isPlaying: boolean;
+
+isPlaying = true;
+
+let fruitsName: string[];
+
+fruitsName = ["apple", "mango"];
+
+let multipleTypes: (string | number)[];
+
+multipleTypes = ["apple", 34, "mango"];
+
+let personInfo: {
+  name: string;
+  age: number;
+  isHungry: boolean;
+};
+
+personInfo = {
+  name: "Tamim",
+  age: 32,
+  isHungry: true,
+};
