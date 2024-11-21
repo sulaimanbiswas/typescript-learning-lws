@@ -125,4 +125,6 @@ players.push(musfiq);
 console.log(players);
 // Module System
 const user1 = new User("sulaiman", 25, "Bangladesh");
+let user2;
+user2 = new User("Rina", 25, "Bangladesh");
 console.log("user1", user1);

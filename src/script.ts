@@ -1,4 +1,5 @@
 import { User } from "./classes/User.js";
+import { IsUser } from "./interfaces/isUser.js";
 
 const country = "Bangladesh";
 console.log(country);
@@ -221,5 +222,8 @@ console.log(players);
 
 // Module System
 const user1 = new User("sulaiman", 25, "Bangladesh");
+let user2: IsUser;
+
+user2 = new User("Rina", 25, "Bangladesh");
 
 console.log("user1", user1);
