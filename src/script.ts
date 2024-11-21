@@ -187,9 +187,9 @@ console.log(add(5, 2));
 // Class
 
 class Player {
-  name: string;
-  age: number;
-  country: string;
+  public name: string;
+  private age: number;
+  readonly country: string;
 
   constructor(n: string, a: number, c: string) {
     this.name = n;
@@ -205,9 +205,18 @@ class Player {
 const mahmudullah = new Player("Mahmudullah", 40, "Bangladesh");
 const musfiq = new Player("Musfiq", 50, "Banglasesh");
 
+console.log(musfiq.name);
+console.log(musfiq.country);
+
+// musfiq.country = ""
+
 const players: Player[] = [];
 
 players.push(mahmudullah);
 players.push(musfiq);
 
 console.log(players);
+
+class User {
+  constructor(private name: string, public age: number, country: string) {}
+}

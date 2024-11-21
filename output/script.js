@@ -103,6 +103,7 @@ add = (a, b) => {
     return a + b;
 };
 console.log(add(5, 2));
+// Class
 class Player {
     constructor(n, a, c) {
         this.name = n;
@@ -115,7 +116,16 @@ class Player {
 }
 const mahmudullah = new Player("Mahmudullah", 40, "Bangladesh");
 const musfiq = new Player("Musfiq", 50, "Banglasesh");
+console.log(musfiq.name);
+console.log(musfiq.country);
+// musfiq.country = ""
 const players = [];
 players.push(mahmudullah);
 players.push(musfiq);
 console.log(players);
+class User {
+    constructor(name, age, country) {
+        this.name = name;
+        this.age = age;
+    }
+}
