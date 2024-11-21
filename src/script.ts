@@ -123,3 +123,35 @@ dynamicTypeObject = {
   age: 45,
   name: "25",
 };
+
+// function
+
+let myFunc: Function;
+
+myFunc = () => {
+  console.log("Hello");
+};
+
+myFunc();
+
+const yourFunc = (a: string, b: string) => {
+  console.log(`Hello ${a} & ${b}`);
+};
+
+yourFunc("a", "b");
+
+// optional
+
+const optionalFunc = (a: string, b?: string) => {
+  console.log(`Hello ${a} & ${b}`);
+};
+
+optionalFunc("hello");
+
+// void and undifind
+
+const numFunc = (a: number, b: number): number => {
+  return a + b;
+};
+
+numFunc(5, 3);
